@@ -115,7 +115,6 @@
         
         
                     }
-
             
     }
     /* ajustes de imagenes de tienda e index */
@@ -143,9 +142,7 @@
          display: flex;
          flex-direction: row;
          justify-content: center;
-         align-items: center;
-     
-     
+         align-items: center;    
       }
       .box1 {
          
@@ -163,16 +160,11 @@
          height: 50%;
          display: flex;
          flex-direction: column;
-         padding-right: 50px;
-     
-     
+         padding-right: 50px;         
       }
       .box1 h3, .box__2 h3 ,.box__3 h3 , .box4 h3{
          font-size: 28px;
-         margin: 25px 0;
-     
-     
-     
+         margin: 25px 0;               
       }
       .box1 p{
          font-size: 20px;
@@ -182,35 +174,27 @@
          text-decoration: none;
          color: #fff ;
          margin: 5px 0;
-         font-size: 20px;
-     
-     
+         font-size: 20px;          
       }
      
      
      
-      .rs{
-         
+      .rs{         
          width: 100%;
          height: 40px;
          display: flex;
          flex-direction: row;
          justify-content: left;
          align-items: center;
-         margin: 25px 0;
-     
-     
+         margin: 25px 0;          
       }
       .rs img{
          object-fit: cover;
          height: 85%;
-         margin-right: 15px;
-         
+         margin-right: 15px;         
       }
-      
-     
-      .pie{
-        
+           
+      .pie{        
          width: 100%;
          height: 10%;
          display: flex;
@@ -227,8 +211,7 @@
          color: #fff;
          font-size: 18px;
       }
-        
-    
+            
      }
      /* tienda */
      .tienda{
@@ -242,9 +225,7 @@
 
      /* INFO ITEMS */
      .cartas{
-        padding: 0 25px;
-        
-          
+        padding: 0 25px;                  
      }
      .sp{
         background: linear-gradient(170deg, #8c366c, #6f64e7);
@@ -261,10 +242,7 @@
       }
 
       /* FORMULARIO PAGINA DE CONTACTO
-       */
-        
-
-
+       */        
      .titulo{
         position: relative;
         width: 100%;
@@ -281,8 +259,7 @@
                 height: 95%;
                 @include gradiente-lineal-tienda;
                 box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
-                border-radius: 30px;
-                
+                border-radius: 30px;               
             }
                     .text-formulairo{
                     position: relative;
@@ -397,28 +374,7 @@
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
-                     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                     
-                          
-    }
-
-
-
-
-                  
+                     }                          
+               }
+                 
     }
