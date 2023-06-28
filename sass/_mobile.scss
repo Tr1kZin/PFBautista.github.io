@@ -2,7 +2,7 @@
 @media (   max-width:500px ) {
 
     /* mediaglobal*/
-    body{
+    
 
         
      .ocultar{
@@ -29,12 +29,17 @@
 
     /* responsive section3  */
       .contenedor-3{
-         width: 100%;
-      
+         width: 100%;               
                 .lorem__box1{            
                     display: none;
                     }
-             
+                    .box__2 a , .box__3 a {
+                        display: none;         
+                     }
+                     .box__2 h3 ,.box__3 h3{
+                        display: none;             
+                     }
+                        
              
                 .footer-text{
                 width: 100%;
@@ -43,7 +48,7 @@
                     display: grid;
                     padding: 20px ;
                     }
-                    
+                     
                         
                                 .pie{
                                 text-align: center;
@@ -93,7 +98,7 @@
     }
 
 
-}
+
 
 /* contacto responsive */
      .titulo{
@@ -122,5 +127,4 @@
       .h2-form{
         width: 100%;
       }
-      
-}
+    }

@@ -6,74 +6,72 @@
 
 @media (max-width: 500px) {
   /* mediaglobal*/
-  body {
-    /* responsive section3  */
-    /* responsive tienda */
-  }
-  body .ocultar {
+  .ocultar {
     display: none;
   }
-  body h1 {
+  h1 {
     width: 480px;
   }
-  body .p-de-banner {
+  .p-de-banner {
     width: 480px;
   }
-  body .boton__descarga {
+  .boton__descarga {
     display: none;
   }
-  body .texto-agrd {
+  .texto-agrd {
     display: none;
   }
-  body .text {
+  .text {
     display: grid;
     width: 200px;
   }
-  body .contenedor-3 {
+  /* responsive section3  */
+  .contenedor-3 {
     width: 100%;
   }
-  body .contenedor-3 .lorem__box1 {
+  .contenedor-3 .lorem__box1 {
     display: none;
   }
-  body .contenedor-3 .box__2 {
+  .contenedor-3 .box__2 a, .contenedor-3 .box__3 a {
     display: none;
   }
-  body .contenedor-3 .box__3 {
+  .contenedor-3 .box__2 h3, .contenedor-3 .box__3 h3 {
     display: none;
   }
-  body .contenedor-3 .footer-text {
+  .contenedor-3 .footer-text {
     width: 100%;
   }
-  body .contenedor-3 footer {
+  .contenedor-3 footer {
     display: grid;
     padding: 20px;
   }
-  body .contenedor-3 .pie {
+  .contenedor-3 .pie {
     text-align: center;
   }
-  body .contenedor-3 .texto__ocultMobile {
+  .contenedor-3 .texto__ocultMobile {
     display: none;
   }
-  body nav {
+  nav {
     background-color: beige;
     width: 100%;
     height: 40px;
   }
-  body .pie {
+  .pie {
     text-align: center;
   }
-  body .texto__ocultMobile {
+  .texto__ocultMobile {
     display: none;
   }
-  body .card {
+  /* responsive tienda */
+  .card {
     display: grid;
     grid-template-columns: 1fr;
     width: 300px;
   }
-  body .cardAkali {
+  .cardAkali {
     display: none;
   }
-  body .cardDraven {
+  .cardDraven {
     display: none;
   }
   /* contacto responsive */
