@@ -5,19 +5,19 @@
     box-sizing: border-box;
 
 }  
-    
+   @keyframes glowing{
+      0% {
+         background-position: 0 0;
+      }
+      50% {
+         background-position: 400% 0;
+      }
+      100% {
+         background-position: 0 0;
+      }
+   }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
     @import 'mobile';
-    @mixin boton_descarga{
-            background-color: coral;
-            padding: 20px 0 ;
-            width: 50%;
-            text-align: center;
-            text-decoration: none;
-            font-size: 24px;
-            color: #fff;
-            transition: 1s;
-            border-radius: 50px;
-    }
     
     @mixin contenedor-3-bloque{
         background-color: #222222;
@@ -38,12 +38,19 @@
     
     header{
          nav{
+          color: #1766a3;
             
-            border: black 2px solid;
                 .navbar-nav{
-                    
-            
-                     margin: 0 250px;
+                  text-decoration: none;
+                  transition: 2s;
+                  overflow: auto;
+                  
+                            
+                        }
+                        .navbar-nav:hover{
+                           margin: 0 250px;
+                           background-color: violet;
+                           border-radius: 40px;
                         }
                         .nav-link{
                             font-size: 20px;
@@ -51,9 +58,17 @@
                             transition: 1s;
                          }
                              .nav-link:hover{
-                                color: black;
-                                background-color: coral;
-                                    border-radius: 40px;
+                                    content: "";
+                           position: relative;
+                           top: 0;
+                           left: 0;
+                           z-index: 0;
+                           width: 100%;
+                           height: 100%;
+                           background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+                           background-size: 800%;
+                           border-radius: 40px;
+                           animation: glowing 20s linear infinite;
 
                                     }
     }
@@ -61,20 +76,27 @@
     }
     /* index */
     .banner{
-        background-color: beige
-        ;
+        background-image: url(https://cl.buscafs.com/www.levelup.com/public/uploads/images/467487.jpg);
+        background-repeat: no-repeat;
          width: 100%;
         height: calc(100vh - 100px);
         display: flex;
          justify-content: start;
         align-items: center;
-            .banner__textos{
+        
+            .banner__textos{ 
+               color: grey;
+               font-weight: 700;
+               font-family: sans-serif;
+               position: relative;
             width: 50%;
             display: flex;
             flex-direction: column;
-            padding-left: 50px;
+            padding-left: 20px;
 
             }
+            
+            
                  h1{
                 font-size: 60px;
                 }
@@ -84,26 +106,42 @@
                 
                     }
                         .boton__descarga{
-                            @include boton_descarga;
-
+                           background-color: black;
+                           cursor: pointer;
+                           border: none;
+                           padding: 16px 32px;
+                           color: #fff;
+                           font-size: 24px;
+                           font-weight: bold;
+                           position: relative;
+                           border-radius: 10px;
+                           width: 50%;
+                           text-align: center;
+                           text-decoration: none;
+                           transition: 2s;
                         }
-                            .boton__descarga:hover{
-                                background-color:black ;
-                                color: white;
-                            }
+                        .boton__descarga:hover{
+                           content: "";
+                           position: relative;
+                           top: 0;
+                           left: 0;
+                           z-index: 0;
+                           width: 50%;
+                           height: 100%;
+                           background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+                           background-size: 800%;
+                           border-radius: 50px;
+                           animation: glowing 20s linear infinite;
+                        }                         
     } 
     
     .text{
-        
-
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
-        
-               
+              
                 .text h2{
                 font-size: 36px;
         
@@ -176,9 +214,7 @@
          margin: 5px 0;
          font-size: 20px;          
       }
-     
-     
-     
+         
       .rs{         
          width: 100%;
          height: 40px;
@@ -356,6 +392,7 @@
                         background: #1766a3;
                         color: #0b426c;
                      }
+                     
                      .info-contacto{
                         display: flex;
                         justify-content: center;

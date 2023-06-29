@@ -1,9 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 @media (max-width: 500px) {
   /* mediaglobal*/
   .ocultar {
@@ -50,11 +62,6 @@
   }
   .contenedor-3 .texto__ocultMobile {
     display: none;
-  }
-  nav {
-    background-color: beige;
-    width: 100%;
-    height: 40px;
   }
   .pie {
     text-align: center;
@@ -111,10 +118,17 @@ body {
    */
 }
 body header nav {
-  border: black 2px solid;
+  color: #1766a3;
 }
 body header nav .navbar-nav {
+  text-decoration: none;
+  transition: 2s;
+  overflow: auto;
+}
+body header nav .navbar-nav:hover {
   margin: 0 250px;
+  background-color: violet;
+  border-radius: 40px;
 }
 body header nav .nav-link {
   font-size: 20px;
@@ -122,12 +136,21 @@ body header nav .nav-link {
   transition: 1s;
 }
 body header nav .nav-link:hover {
-  color: black;
-  background-color: coral;
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background-size: 800%;
   border-radius: 40px;
+  animation: glowing 20s linear infinite;
 }
 body .banner {
-  background-color: beige;
+  background-image: url(https://cl.buscafs.com/www.levelup.com/public/uploads/images/467487.jpg);
+  background-repeat: no-repeat;
   width: 100%;
   height: calc(100vh - 100px);
   display: flex;
@@ -135,10 +158,14 @@ body .banner {
   align-items: center;
 }
 body .banner .banner__textos {
+  color: grey;
+  font-weight: 700;
+  font-family: sans-serif;
+  position: relative;
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 body .banner h1 {
   font-size: 60px;
@@ -148,19 +175,32 @@ body .banner .banner__textos p {
   margin: 20px 0 30px 0;
 }
 body .banner .boton__descarga {
-  background-color: coral;
-  padding: 20px 0;
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  padding: 16px 32px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 10px;
   width: 50%;
   text-align: center;
   text-decoration: none;
-  font-size: 24px;
-  color: #fff;
-  transition: 1s;
-  border-radius: 50px;
+  transition: 2s;
 }
 body .banner .boton__descarga:hover {
-  background-color: black;
-  color: white;
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background-size: 800%;
+  border-radius: 50px;
+  animation: glowing 20s linear infinite;
 }
 body .text {
   width: 100%;
