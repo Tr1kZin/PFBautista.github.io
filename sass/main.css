@@ -81,6 +81,96 @@
   .cardDraven {
     display: none;
   }
+  .espacio {
+    width: 300px;
+    height: 50px;
+  }
+  /* contacto responsive */
+  .titulo {
+    margin-left: 0px;
+    height: 100%;
+    width: 100vh;
+  }
+  .contactForm {
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+  }
+  .text-formulairo {
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  form {
+    width: 30%;
+    height: 100%;
+  }
+  .p-form {
+    display: none;
+  }
+  .h2-form {
+    width: 100%;
+  }
+}
+@media (max-width: 786px) {
+  .ocultar {
+    display: none;
+  }
+  h1 {
+    width: 480px;
+  }
+  .p-de-banner {
+    width: 480px;
+  }
+  .boton__descarga {
+    display: none;
+  }
+  .texto-agrd {
+    display: none;
+  }
+  .text {
+    display: grid;
+    width: 200px;
+  }
+  /* responsive section3  */
+  .contenedor-3 {
+    width: 100%;
+  }
+  .contenedor-3 .lorem__box1 {
+    display: none;
+  }
+  .contenedor-3 .footer-text {
+    width: 100%;
+  }
+  .contenedor-3 footer {
+    display: grid;
+    padding: 20px;
+  }
+  .contenedor-3 .pie {
+    text-align: center;
+  }
+  .contenedor-3 .texto__ocultMobile {
+    display: none;
+  }
+  .pie {
+    text-align: center;
+  }
+  .texto__ocultMobile {
+    display: none;
+  }
+  /* responsive tienda */
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 300px;
+  }
+  .cardAkali {
+    display: none;
+  }
+  .cardDraven {
+    display: none;
+  }
   /* contacto responsive */
   .titulo {
     margin-left: 0px;
@@ -127,7 +217,7 @@ body header nav .navbar-nav {
 }
 body header nav .navbar-nav:hover {
   margin: 0 250px;
-  background-color: violet;
+  background-color: white;
   border-radius: 40px;
 }
 body header nav .nav-link {
@@ -141,15 +231,40 @@ body header nav .nav-link:hover {
   top: 0;
   left: 0;
   z-index: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
   background-size: 800%;
   border-radius: 40px;
   animation: glowing 20s linear infinite;
 }
+body .banner1 {
+  background-image: url(https://cl.buscafs.com/www.levelup.com/public/uploads/images/467487.jpg);
+  border-radius: 10px;
+  border: 2px solid black;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+body .banner1 .banner__textos1 {
+  color: grey;
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+body .texto__ocultMobile {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+}
 body .banner {
   background-image: url(https://cl.buscafs.com/www.levelup.com/public/uploads/images/467487.jpg);
+  border-radius: 10px;
+  border: 2px solid black;
   background-repeat: no-repeat;
   width: 100%;
   height: calc(100vh - 100px);
@@ -159,13 +274,15 @@ body .banner {
 }
 body .banner .banner__textos {
   color: grey;
-  font-weight: 700;
-  font-family: sans-serif;
+  font-family: "Roboto Mono", monospace;
   position: relative;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 15px;
+}
+body .banner .p-de-banner {
+  font-family: "Lora", serif;
 }
 body .banner h1 {
   font-size: 60px;
@@ -323,6 +440,12 @@ body .sp {
   color: #fff;
   border-radius: 40px;
 }
+body .espacio {
+  height: 50px;
+}
+body .espacio2 {
+  height: 20px;
+}
 body .titulo {
   position: relative;
   width: 100%;
@@ -332,13 +455,13 @@ body .titulo {
   /* input y text focus */
 }
 body .titulo .contactForm {
-  position: relative;
+  position: absolute;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr 1fr));
   gap: 20px;
-  padding: 40px;
+  padding: 0 30px;
   width: 90%;
-  height: 95%;
+  height: 100%;
   background: linear-gradient(170deg, #0f3443, #34e69f);
   box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
   border-radius: 30px;
@@ -354,6 +477,7 @@ body .titulo .text-formulairo {
 }
 body .titulo form {
   width: 80%;
+  height: 100%;
 }
 body .titulo .texto-contacto {
   color: black;

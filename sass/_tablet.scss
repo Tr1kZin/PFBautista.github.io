@@ -1,11 +1,5 @@
-
-@media (   max-width:500px ) {
-
-    /* mediaglobal*/
-    
-
-        
-     .ocultar{
+@media (max-width:786px){
+    .ocultar{
         display: none;
      }
          h1{
@@ -33,12 +27,7 @@
                 .lorem__box1{            
                     display: none;
                     }
-                    .box__2 a , .box__3 a {
-                        display: none;         
-                     }
-                     .box__2 h3 ,.box__3 h3{
-                        display: none;             
-                     }
+                    
                         
              
                 .footer-text{
@@ -91,37 +80,33 @@
     }
 
 
-        .espacio{
-            width: 300px ;
-            height: 50px;
-        }
+
 
 /* contacto responsive */
      .titulo{
-        margin-left: 0px;
-        height: 100%;
-        width: 100vh;
         
+        margin-left: 0px;
+        width: 100vh;
+        height: 100%;
      }
      .contactForm{ 
         margin-left: 0px;
         width: 100%;
-        height:100%;
+        height: 100%;
         place-items: center;
      }
      .text-formulairo{ 
+       
         margin-left: 0px;
         width: 100%;
         height: 100%;
      }
      form{
+        
         width: 30%;
         height: 100%;
-     }
-     .p-form{
-        display: none;
      }
       .h2-form{
         width: 100%;
       }
-    }
+}
